@@ -269,14 +269,6 @@ body {
     }
 }
 
-/* SOCIAL MEDIA LOGOS */
-#socialMediaContainer {
-    display: flex;
-}
-.socialMediaLogo {
-    width: 40px;
-    margin-right: 5px;
-}
 
 /* LIST PROPERTIES */
 .list-1 {
@@ -344,10 +336,19 @@ body {
     color: black;
     padding-left: 10px; 
     padding-bottom: 5px; 
+    width: 40px;
+    margin-right: 5px;
 }
-.socialMediaLink:hover {
-    color: #e66465;
+
+/* SOCIAL MEDIA LOGOS */
+#socialMediaContainer {
+    display: flex;
 }
+.socialMediaLogo {
+    width: 40px;
+    
+}
+
 
 /* ABOUT INFOGRAPH PROPERTIES */
 #skillsContent {
