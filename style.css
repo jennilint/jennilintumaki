@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+/* LOGO */
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    padding-left: 20px;
+    margin-top: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: rgba(255, 255, 255, 0);
+    
+}
+@media only screen and (max-width: 1600px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    h1 {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 60px;
+        mix-blend-mode: multiply;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+/* CONTENT */
+body {
+    background: radial-gradient(rgb(99, 243, 16), white);
+    min-width: 240px;
+    
+}
+#content {
+    display: flex;
+}
+
+/* MOBILE NAVIGATION */
+#mobileNavigation {
+    display: none;
+}
+#dropDownButton {
+    height: 50px;
+    width: 55px;
+    right: 5px;
+    top: 10px;
+    
+}
+#dropDownButtonImage {
+    height: 50px;
+}
+#dropDownMenu {
+    display: none;
+    outline: 1px solid black;
+}
+
+/* NAVIGATION */
+#navigation {
+    width: 30%;
+    max-width: 560px;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+#header {
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+.row {
+    display: flex;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+.rowHeader {
+    font-family: 'STIX Two Text', serif;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 5px;
+    flex-basis: 60%;
+}
+.rowType {
+    font-family: 'STIX Two Text', serif;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 5px;
+    flex-basis: 28%;
+}
+.rowYear {
+    font-family: 'STIX Two Text', serif;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 5px;
+    flex-basis: 12%;
+}
+.row:hover .rowHeader{
+    text-decoration: underline;
+}
+.row:hover .rowType{
+    text-decoration: underline;
+}
+.row:hover .rowYear{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 1200px) {
+    .rowHeader, .rowType, .rowYear{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #navigation {
+        display: none;
+    }
+    #mobileNavigation {
+        display: block;
+    }
+    .rowYear, .rowType {
+        display: none;
+    }
+    .rowHeader{
+        padding-left: 1px;
+        padding-right: 1px;
+        flex-basis: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+/* GALLERY */
+#gallery {
+    border-left: 1px solid;
+    width: 70%;
+    min-height: 95vh;
+    margin-left: auto;
+}
+@media only screen and (min-width: 1850px) {
+    #gallery {
+        margin-left: 550px;
+        margin-right: auto;
+        width: 65%;
+    }
+}
+.galleryImage {
+    padding-left: 10px;
+    width: 98%;
+}
+.topImage {
+    height: auto;
+    padding-left: 10px;
+    width: 98%;
+    margin-bottom: 5px;
+    display: block;
+    
+
+}
+@media only screen and (max-width: 900px) {
+    .topImage {
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 99%;
+    }
+}
+.topImageSmaller {
+    height: auto;
+    padding-left: 10px;
+    width: 80%;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.smallHeader {
+    font-family: 'STIX Two Text', serif;
+    border-bottom: 1px solid;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.description {
+    width: 90%;
+    font-family: 'STIX Two Text', serif;
+    padding-left: 10px; 
+    font-size: 14pt;
+    line-height: 1.4;
+    max-width: 870px;
+}
+.smallText {
+    width: 90%;
+    font-family: 'STIX Two Text', serif;
+    padding-left: 10px; 
+    font-size: 14pt;
+    max-width: 630px;
+}
+.processText {
+    width: 100%;
+    font-family: 'STIX Two Text', serif;
+    font-style: italic;
+    font-weight: 500;
+    padding-left: 10px; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 12pt;
+    max-width: 630px;
+}
+@media only screen and (max-width: 900px) {
+    #gallery {
+        width: 100%;
+        border-left: none;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .description, .smallText, .smallHeader {
+        font-size: 15px;
+    }
+}
+
+/* LIST PROPERTIES */
+.list-1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 10px; 
+    max-width: 630px;
+}
+.list-2 {
+    font-family: 'STIX Two Text', serif;
+    font-size: 14pt;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 30px; 
+    margin-top: -4px;
+    max-width: 630px;
+}
+.list-3 {
+    font-family: 'STIX Two Text', serif;
+    font-size: 13pt;
+    font-style: italic;
+    line-height: 1.3;
+    padding-left: 30px;
+    margin-top: -10px;
+    max-width: 630px;
+}
+.list-text {
+    font-family: 'STIX Two Text', serif;
+    font-size: 14pt;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 10px;
+    max-width: 630px;
+}
+
+@media only screen and (max-width: 500px) {
+    .list-1 {
+        font-size: 13px;
+        padding-left: 5px;
+    }
+    .list-2 {
+        font-size: 14px;
+        padding-left: 15px;
+        margin-top: -5px;
+    }
+    .list-3 {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .list-text {
+        font-size: 14px;
+        padding-left: 5px;
+    } 
+}
+
+/* LINK PROPERTIES */
+.socialMediaLink {
+    display: block;
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    font-size: 14pt;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px; 
+    padding-bottom: 5px; 
+}
+.socialMediaLink:hover {
+    color: #e66465;
+}
+
+/* ABOUT INFOGRAPH PROPERTIES */
+#skillsContent {
+    display: flex;
+    width: 90%;
+}
+#skillsContainer {
+    display: block;
+    width: 70%;
+}
+.barContainer {
+    width: 30%;
+    height: 8px;
+    margin-left: 30px; 
+    margin-right: 10px;
+    outline: 1px solid black;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.bar {
+    height: 8px;
+    outline: 1px solid black;
+}
+#bar1 {width: 70%;}
+#bar2 {width: 50%;}
+#bar3 {width: 45%;}
+#bar4 {width: 40%;}
+#bar5 {width: 25%;}
+#bar6 {width: 33%;}
+#bar7 {width: 20%;}
+#bar8 {width: 15%;}
+
+@media only screen and (max-width: 900px) {
+    .barContainer {
+        width: 92%;
+        margin-left: 15px; 
+    }
+}
+@media only screen and (max-width: 500px) {
+    .barContainer {
+        width: 80%;
+    }
+}
+
+/* IMAGE GALLERY PROPERTIES */
+.imageGallery {
+    display: flex;
+    width: 99%;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    justify-content:center;
+}
+.image {
+    display: block;
+    height: auto;
+    width: 100%;
+    min-width: 0;
+    width: auto;  
+    margin-inline-end: 7px;
+}
+
+/* FRONT PAGE GALLERY */
+.frontGallery {
+    width: 99%;
+    margin-left: 10px; 
+    margin: 10px;
+    column-count: 3;
+}
+.smallFrontGallery {
+    column-count: 2;
+    width: 100%;
+    margin-bottom: 30px;
+    column-gap: 0px;  
+}
+.noColumnGallery {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.frontBlock {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+}
+.frontImage {
+    display: block;
+    min-width: 0;
+    filter: grayscale(100%);
+    fill-opacity: inherit;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+.frontText {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    font-size: 55pt;
+    line-height: 1;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: auto;
+}
+.frontTextSmall {
+    font-family: 'STIX Two Text', serif;
+    font-size: 30pt;
+    line-height: 1.1;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: -50px;
+}
+@media only screen and (max-width: 900px) {
+    .frontGallery {
+        column-count: 1;
+    }
+}
+
+/* FOOTER */
+#footer {
+    display: block;
+    height: 120px;
+    border-top: 1px solid;
+}
+#footerText {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    margin-top: 40px;
+    text-align: center;
+}
