@@ -269,6 +269,15 @@ body {
     }
 }
 
+/* SOCIAL MEDIA LOGOS */
+#socialMediaContainer {
+    display: flex;
+}
+.socialMediaLogo {
+    width: 40px;
+    margin-right: 5px;
+}
+
 /* LIST PROPERTIES */
 .list-1 {
     font-family: 'Maven Pro', sans-serif;
