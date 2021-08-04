@@ -31,7 +31,7 @@ h1 {
     h1 {
         font-size: 60px;
         mix-blend-mode: multiply;
-        text-align: center;
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -64,18 +64,46 @@ body {
     display: none;
 }
 #dropDownButton {
-    height: 50px;
-    width: 55px;
-    right: 5px;
+    height: 80px;
+    width: 80px;
+    right: 15px;
     top: 10px;
+    position:absolute;
     
 }
 #dropDownButtonImage {
-    height: 50px;
+    height: 80px;
 }
 #dropDownMenu {
     display: none;
     outline: 1px solid black;
+}
+@media only screen and (max-width: 720px) {
+    #dropDownButton {
+        height: 60px;
+        width: 60px;
+    }
+    #dropDownButtonImage {
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #dropDownButton {
+        height: 50px;
+        width: 50px;
+    }
+    #dropDownButtonImage {
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #dropDownButton {
+        height: 40px;
+        width: 40px;
+    }
+    #dropDownButtonImage {
+        height: 40px;
+    }
 }
 
 /* NAVIGATION */
@@ -89,6 +117,12 @@ body {
 #header {
     cursor: pointer;
     border-bottom: 1px solid;
+    display: block;
+}
+@media only screen and (max-width: 900px) {
+    #header {
+        display: flex;
+    }
 }
 .row {
     display: flex;
@@ -172,8 +206,6 @@ body {
     width: 98%;
     margin-bottom: 5px;
     display: block;
-    
-
 }
 @media only screen and (max-width: 900px) {
     .topImage {
@@ -370,25 +402,21 @@ body {
 
 /* FRONT PAGE GALLERY */
 .frontGallery {
-    width: 99%;
-    margin-left: 10px; 
-    margin: 10px;
+    width: 95%;
+    padding-bottom: 5px;
     column-count: 3;
+    margin-left: auto;
+    margin-right: auto;
 }
 .smallFrontGallery {
     column-count: 2;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     column-gap: 0px;  
 }
 .noColumnGallery {
     width: 100%;
-    margin-bottom: 30px;
-}
-.frontBlock {
-    width: 100%;
-    margin-bottom: 30px;
-    height: auto;
+    margin-bottom: 10px;
 }
 .frontImage {
     display: block;
@@ -435,4 +463,9 @@ body {
     font-size: 12pt;
     margin-top: 40px;
     text-align: center;
+}
+@media only screen and (max-width: 900px) {
+    #footerText {
+        font-size: 9pt;
+    }
 }
