@@ -329,11 +329,11 @@ body {
 /* LINK PROPERTIES */
 .socialMediaLink {
     display: block;
-    font-family: 'STIX Two Text', serif;
+    /*font-family: 'STIX Two Text', serif;
     font-weight: 500;
     font-size: 14pt;
     text-decoration: none;
-    color: black;
+    color: black;*/
     padding-left: 10px; 
     padding-bottom: 5px; 
     width: 40px;
@@ -437,13 +437,19 @@ body {
     height: auto;
     mix-blend-mode: multiply;
 }
+.frontTextContainer {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid;
+    margin-top: -50px;
+}
 .frontText {
-    font-family: 'STIX Two Text', serif;
+    font-family: 'Krona One', sans-serif;
     font-weight: 500;
     font-size: 55pt;
     line-height: 1;
     width: 80%;
-    margin-left: 10px;
     margin-right: auto;
 }
 .frontTextSmall {
@@ -451,7 +457,6 @@ body {
     font-size: 30pt;
     line-height: 1.1;
     width: 80%;
-    margin-left: 10px;
     margin-right: auto;
     margin-top: -50px;
 }
