@@ -412,21 +412,16 @@ body {
 
 /* FRONT PAGE GALLERY */
 .frontGallery {
-    width: 95%;
-    padding-bottom: 5px;
-    column-count: 3;
+    width: 100%;
+    padding: 5px;
+    column-count: 1;
     margin-left: auto;
     margin-right: auto;
 }
 .smallFrontGallery {
-    column-count: 2;
+    column-count: 1;
     width: 100%;
-    margin-bottom: 10px;
     column-gap: 0px;  
-}
-.noColumnGallery {
-    width: 100%;
-    margin-bottom: 10px;
 }
 .frontImage {
     display: block;
@@ -435,13 +430,12 @@ body {
     fill-opacity: inherit;
     width: 100%;
     height: auto;
-    mix-blend-mode: multiply;
+    /*mix-blend-mode: multiply;*/
 }
 .frontTextContainer {
     width: 100%;
     margin-bottom: 10px;
     padding-left: 10px;
-    border-bottom: 1px solid;
     margin-top: -90px;
 }
 .frontText {
@@ -449,16 +443,33 @@ body {
     font-weight: 500;
     font-size: 75pt;
     line-height: 1.1;
-    width: 80%;
+    width: 100%;
     margin-right: auto;
 }
 .frontTextSmall {
     font-family: 'STIX Two Text', serif;
     font-size: 30pt;
     line-height: 1.1;
-    width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-top: -70px;
+}
+.frontContainer {
+    outline: none;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.frontContainer:hover {
+    outline: 1px solid black;
+}
+.frontHeader {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 500;
+    font-size: 20pt;
+    line-height: 1.1;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: auto;
 }
 @media only screen and (max-width: 1300px) {
     .frontTextContainer {
@@ -474,6 +485,9 @@ body {
 @media only screen and (max-width: 900px) {
     .frontGallery {
         column-count: 1;
+    }
+    .frontHeader {
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 550px) {
