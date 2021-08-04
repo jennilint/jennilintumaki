@@ -442,13 +442,13 @@ body {
     margin-bottom: 10px;
     padding-left: 10px;
     border-bottom: 1px solid;
-    margin-top: -50px;
+    margin-top: -90px;
 }
 .frontText {
     font-family: 'Krona One', sans-serif;
     font-weight: 500;
-    font-size: 55pt;
-    line-height: 1;
+    font-size: 75pt;
+    line-height: 1.1;
     width: 80%;
     margin-right: auto;
 }
@@ -458,11 +458,42 @@ body {
     line-height: 1.1;
     width: 80%;
     margin-right: auto;
-    margin-top: -50px;
+    margin-top: -70px;
+}
+@media only screen and (max-width: 1300px) {
+    .frontTextContainer {
+        margin-top: -50px;  
+    }
+    .frontText {
+        font-size: 70px;
+    }
+    .frontTextSmall {
+        margin-top: -40px;
+    }
 }
 @media only screen and (max-width: 900px) {
     .frontGallery {
         column-count: 1;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .frontTextContainer {
+        margin-top: -20px;  
+    }
+    .frontText {
+        font-size: 50px;
+    }
+    .frontTextSmall {
+        font-size: 28px;
+        margin-top: -40px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .frontText {
+        font-size: 45px;
+    }
+    .frontTextSmall {
+        margin-top: -30px;
     }
 }
 
