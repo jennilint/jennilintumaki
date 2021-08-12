@@ -453,6 +453,7 @@ body {
     line-height: 1.3;
     width: 95%;
     margin-right: auto;
+    margin-bottom: 0px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     color: transparent;
@@ -464,7 +465,7 @@ body {
     line-height: 1.1;
     width: 95%;
     margin-right: auto;
-    margin-top: -100px;
+    margin-top: 5px;
 }
 .frontContainer {
     outline: none;
@@ -487,9 +488,6 @@ body {
     .frontText {
         font-size: 70px;
     }
-    .frontTextSmall {
-        margin-top: -40px;
-    }
 }
 @media only screen and (max-width: 900px) {
     .frontGallery {
@@ -511,15 +509,11 @@ body {
     }
     .frontTextSmall {
         font-size: 28px;
-        margin-top: -40px;
     }
 }
 @media only screen and (max-width: 550px) {
     .frontText {
         font-size: 45px;
-    }
-    .frontTextSmall {
-        margin-top: -30px;
     }
 }
 
