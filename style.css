@@ -1,53 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
 /* LOGO */
 h1 {
-    font-family: 'Krona One', sans-serif;
-    font-weight: 100;
-    font-size: 45px;
+    font-family: 'Goblin One', cursive;
+    font-weight: 600;
+    font-size: 40px;
     padding-left: 20px;
-    margin-top: 30px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: rgba(255, 255, 255, 0);
-    
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
-@media only screen and (max-width: 1600px) {
-    h1 {
-        font-size: 35px;
-    }
-}
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1750px) {
     h1 {
         font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1350px) {
+    h1 {
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 1100px) {
     h1 {
-        font-size: 22px;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 900px) {
     h1 {
-        font-size: 60px;
-        mix-blend-mode: multiply;
+        font-size: 50px;
         margin-top: 10px;
+        padding-left: 5px;
     }
 }
-@media only screen and (max-width: 700px) {
-    h1 {
-        font-size: 40px;
-    }
-}
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 770px) {
     h1 {
         font-size: 30px;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
     h1 {
         font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 16px;
+        margin-top: 5px;
+        
     }
 }
 /* CONTENT */
@@ -65,45 +64,47 @@ body {
     display: none;
 }
 #dropDownButton {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 95px;
     right: 15px;
     top: 10px;
     position:absolute;
     
 }
 #dropDownButtonImage {
-    height: 80px;
+    height: 60px;
 }
 #dropDownMenu {
     display: none;
     outline: 1px solid black;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 770px) {
     #dropDownButton {
         height: 60px;
-        width: 60px;
+        width: 95px;
+        right: 5px;
     }
     #dropDownButtonImage {
-        height: 60px;
+        height: 40px;
     }
 }
 @media only screen and (max-width: 550px) {
     #dropDownButton {
         height: 50px;
+        width: 65px;
+    }
+    #dropDownButtonImage {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #dropDownButton {
+        height: 20px;
         width: 50px;
     }
     #dropDownButtonImage {
-        height: 50px;
-    }
-}
-@media only screen and (max-width: 400px) {
-    #dropDownButton {
-        height: 40px;
-        width: 40px;
-    }
-    #dropDownButtonImage {
-        height: 40px;
+        height: 20px;
     }
 }
 
@@ -119,6 +120,7 @@ body {
     cursor: pointer;
     border-bottom: 1px solid;
     display: block;
+    height: auto;
 }
 @media only screen and (max-width: 900px) {
     #header {
@@ -185,7 +187,7 @@ body {
         padding-left: 7px;
         padding-right: 1px;
         flex-basis: 100%;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 /* GALLERY */
@@ -376,14 +378,14 @@ body {
 }
 .bar {
     height: 8px;
-    outline: 1px solid black;
+    background-color: black;
 }
 #bar1 {width: 70%;}
 #bar2 {width: 50%;}
 #bar3 {width: 45%;}
 #bar4 {width: 40%;}
 #bar5 {width: 25%;}
-#bar6 {width: 33%;}
+#bar6 {width: 28%;}
 #bar7 {width: 20%;}
 #bar8 {width: 15%;}
 
@@ -445,7 +447,7 @@ body {
     margin-top: -90px;
 }
 .frontText {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Goblin One', cursive;
     font-weight: 500;
     font-size: 75pt;
     line-height: 1.1;
@@ -522,7 +524,7 @@ body {
     border-top: 1px solid;
 }
 #footerText {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     font-weight: 500;
     font-size: 12pt;
     margin-top: 40px;
