@@ -422,22 +422,21 @@ body {
 .frontGallery {
     width: 100%;
     padding: 5px;
-    column-count: 1;
     margin-left: auto;
     margin-right: auto;
 }
 .smallFrontGallery {
-    column-count: 2;
-    width: 100%;
-    column-gap: 0px;  
+    width: 99%; 
+    display: flex;
+    justify-content: center;
 }
 .frontImage {
     display: block;
     min-width: 0;
     filter: grayscale(100%);
     fill-opacity: inherit;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: auto;  
     /*mix-blend-mode: multiply;*/
 }
 .frontTextContainer {
@@ -490,8 +489,12 @@ body {
     }
 }
 @media only screen and (max-width: 900px) {
-    .frontGallery {
-        column-count: 1;
+    .smallFrontGallery {
+        display: block;
+        
+    }
+    .frontImage {
+        width: 99%;
     }
     .frontText {
         font-size: 60px;
